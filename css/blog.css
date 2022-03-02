@@ -1,0 +1,33 @@
+.breadcrumb{
+    padding: 10px 0px;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+
+/* ----------------blog-news-------- */
+.blog-news{
+    padding: 5px 0px 100px 0px;
+}
+.blog-news h2{
+    text-align: center;
+    padding: 5px 0px 20px;
+    color: #0e0e7c;
+    text-transform: uppercase;
+}
+.blog-news h5{
+    color: #2a2a6d;
+}
+
+.blog-news .content{
+    color: black;
+}
+
+.blog-news a{
+    height: 100%;
+    overflow: hidden;
+}
+.card:hover img {
+    -webkit-transform:none;
+    
+}

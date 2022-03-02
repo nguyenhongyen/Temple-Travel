@@ -1,0 +1,88 @@
+/* -----------breadcrumb------- */
+.breadcrumb{
+    padding: 10px 0px;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+/* -----------------book-tour----------------- */
+.book-tour{
+    padding-bottom: 100px;
+}
+.book-tour .card-header{
+    background-color: #0e0e7c;
+    color: white;
+}
+.book-tour form #name,.book-tour form #email,
+.book-tour form #phone,.book-tour form #address{
+    width: 100%;
+    padding: 4px 3px;
+}
+.book-tour .voucher{
+    display: flex;
+     margin: 20px 0px;
+}
+.book-tour .voucher #voucher{
+    width: 35%;
+   
+}
+.book-tour .voucher p{
+    color: white;
+    background-color: #e03c3c;
+    padding: 8px 13px;
+    margin: 0px 17px;
+    border-radius: 4px;
+
+}
+
+.book-tour  .btn-payment{
+    background-color: #ffc10e;
+    width: 100%;
+    margin-top: 25px;
+    color: white;
+    border: none;
+    outline: none;
+}
+.book-tour .info-tour .line{
+    display: flex;
+    width: 100%;
+    margin: 12px 0px;
+}
+.book-tour .info-tour .line .name{
+    width: 35%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.book-tour .info-tour .line .number{
+    width: 40%;
+}
+.book-tour .info-tour .line .number input{
+    width: 35px;
+ color: #ffc10e;
+ padding-left: 6px;
+}
+.book-tour .info-tour .line .price-tour{
+    width: 25%;
+}
+
+.book-tour .total,.book-tour .total-bill{
+    display: flex;
+    justify-content:space-between;
+     font-weight: bold;
+}
+.book-tour .total .name{
+   font-size: 18px;
+}
+.book-tour .total .price-tour{
+    font-size: 20px;
+    color: #ffc10e;
+}
+.book-tour .total-bill{
+    font-size: 18px;
+    background-color: antiquewhite;
+    padding: 10px 20px 0px;
+ }
+ .card:hover img {
+    -webkit-transform:none;
+    
+}

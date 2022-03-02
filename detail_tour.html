@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&family=Livvic:wght@600;700&family=Outfit:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detail_tour.css">
+
+    <title>Chi tiết tour</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="top-header">
+                <div class="container">
+                    <div class="item-left">
+                        <p class="border-end">Hotline: <span>1900 1134</span></p>
+                        <p class="">Travel-cskh@gmail.com</p>
+                    </div>
+                    <div class="item-right">
+                        <p class="border-end" title="Đăng ký" data-bs-toggle="modal" data-bs-target="#register"
+                            data-bs-whatever="@mdo">Đăng ký</p>
+                        <p title="Đăng nhập" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Đăng
+                            nhập</p>
+                    </div>
+                    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true" style="color:black;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+                                        <h4 class="modal-title text-center" id="exampleModalLabel">ĐĂNG KÝ</h4>
+                                        <div class="mb-3">
+                                            <input type="text" id="name" name="name" placeholder="Họ tên">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" id="phone" name="phone" placeholder="Số điện thoại">
+                                            <i class="fas fa-phone-volume"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" id="email" name="email" placeholder="Email">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" id="name" placeholder="Mật khẩu">
+                                            <i class="fas fa-key"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" id="name" placeholder="Xác nhận lại mật khẩu">
+                                            <i class="fas fa-key"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button type="button" class="btn ">Đăng ký</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true" style="color:black;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+                                        <h4 class="modal-title text-center" id="exampleModalLabel">ĐĂNG NHẬP</h4>
+                                        <div class="mb-3">
+                                            <input type="email" id="email" name="email" placeholder="Email">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" id="name" placeholder="Mật khẩu">
+                                            <i class="fas fa-key"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <p class="forgot-pass" data-bs-toggle="modal" data-bs-target="#forgot-pass"
+                                                data-bs-whatever="@mdo">Quên mật khẩu?</p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button type="button" class="btn ">Đăng nhập</button>
+                                        </div>
+                                        <div class="mb-3">
+                                            <p>Bạn chưa có tài khoản? <span data-bs-toggle="modal"
+                                                    data-bs-target="#register" data-bs-whatever="@mdo"
+                                                    title="Đăng ký tài khoản"><u>Đăng ký tại đây</u></span> </p>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="forgot-pass" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true" style="color:black;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+                                        <h4 class="modal-title text-center" id="exampleModalLabel">QUÊN MẬT KHẨU</h4>
+                                        <div class="mb-3">
+                                            <input type="text" id="name" placeholder="Họ tên">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" id="email" name="email" placeholder="Email">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button type="button" class="btn ">Gửi</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end top-header -->
+            <div class="header" id="navbar_top">
+                <div class="container">
+                    <a href="#" class="img-logo">
+                        <img src="img/logo.jpg" width="130px;" height="60px">
+                    </a>
+                    <div class="header-right">
+                        <div class="item">
+                            <div class="item-travel">
+                                <i class="fas fa-home icon-menu " title="Trang chủ"></i>
+                                <a href="index.html">Trang chủ</a>
+                            </div>
+                        </div>
+                        <div class="item menu-destination1">
+                            <div class="item-travel destination1">
+                                <i class="fas fa-plane icon-menu" title="Tour nước ngoài"></i>
+                                <a href="tour.html"> Tour nước ngoài <i class="fas fa-caret-down"></i></a>
+                            </div>
+                            <div class="list-destination1">
+                                <div class="row ">
+                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Châu Âu</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Tây Âu</a></li>
+                                                    <li><a href="#">Du lịch Pháp</a></li>
+                                                    <li><a href="#">Du lịch Bỉ</a></li>
+                                                    <li><a href="#">Du lịch Hà Lan</a></li>
+                                                    <li><a href="#">Du lịch Đức</a></li>
+                                                    <li><a href="#">Du lịch Ý</a></li>
+                                                    <li><a href="#">Du lịch Thụy Sĩ</a></li>
+                                                    <li><a href="#">Du lịch Nga</a></li>
+                                                    <li class="view-all"><a href="tour.html">Xem tất cả</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Châu Á</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Nhật Bản</a></li>
+                                                    <li><a href="#">Du lịch Trung Quốc</a></li>
+                                                    <li><a href="#">Du lịch Thái Lan</a></li>
+                                                    <li><a href="#">Du lịch Campuchia</a></li>
+                                                    <li><a href="#">Du lịch Hồng Kong</a></li>
+                                                    <li><a href="#">Du lịch Malaysia</a></li>
+                                                    <li><a href="#">Du lịch Lào</a></li>
+                                                    <li><a href="#">Du lịch Ấn Độ</a></li>
+                                                    <li class="view-all"><a href="tour.html">Xem tất cả</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Châu Mỹ</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Mỹ</a></li>
+                                                    <li><a href="#">Du lịch Canada</a></li>
+                                                    <li><a href="#">Du lịch Cuba</a></li>
+                                                    <li><a href="#">Du lịch Brazil</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Châu Úc</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Úc</a></li>
+                                                    <li><a href="#">Du lịch New Zealand</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item menu-destination2">
+                            <div class="item-travel destination2">
+                                <i class="fas fa-shuttle-van icon-menu" title="Tour trong nước"></i>
+                                <a href="#"> Tour trong nước <i class="fas fa-caret-down"></i></a>
+                            </div>
+                            <div class="list-destination2">
+                                <div class="row ">
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Miền Bắc</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Hà Nội</a></li>
+                                                    <li><a href="#">Du lịch Bắc Ninh</a></li>
+                                                    <li><a href="#">Du lịch Hạ Long</a></li>
+                                                    <li><a href="#">Du lịch Hà Giang</a></li>
+                                                    <li><a href="#">Du lịch Lai Châu</a></li>
+                                                    <li><a href="#">Du lịch Phú Thọ</a></li>
+                                                    <li><a href="#">Du lịch Sapa</a></li>
+                                                    <li><a href="#">Du lịch Tây Bắc</a></li>
+                                                    <li class="view-all"><a href="tour.html">Xem tất cả</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Miền Trung </div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Đà nẵng</a></li>
+                                                    <li><a href="#">Du lịch Bình Thuận</a></li>
+                                                    <li><a href="#">Du lịch Buôn Ma Thuột</a></li>
+                                                    <li><a href="#">Du lịch Đà Lạt</a></li>
+                                                    <li><a href="#">Du lịch Hội An</a></li>
+                                                    <li><a href="#">Du lịch Huế</a></li>
+                                                    <li><a href="#">Du lịch Phú Yên</a></li>
+                                                    <li><a href="#">Du lịch Tây Nguyên</a></li>
+                                                    <li class="view-all"><a href="tour.html">Xem tất cả</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">Du lịch Miền Nam</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Du lịch Tây Ninh</a></li>
+                                                    <li><a href="#">Du lịch Phú Quốc</a></li>
+                                                    <li><a href="#">Du lịch An Giang</a></li>
+                                                    <li><a href="#">Du lịch Bạc Liêu</a></li>
+                                                    <li><a href="#">Du lịch Cà Mau</a></li>
+                                                    <li><a href="#">Du lịch Hà Tiên</a></li>
+                                                    <li><a href="#">Du lịch Nam Du</a></li>
+                                                    <li><a href="#">Du lịch Vũng Tàu</a></li>
+                                                    <li class="view-all"><a href="tour.html">Xem tất cả</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="destination-content">
+                                            <div class="title">CHùm tour nghỉ lễ</div>
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Tour lễ 2/9</a></li>
+                                                    <li><a href="#">Tour du lịch Hành Hương</a></li>
+                                                    <li><a href="#">Tour Noel - Tết Dương lịch</a></li>
+                                                    <li><a href="#">Tour du lịch tết Nguyên Đán</a></li>
+                                                    <li><a href="#">Tour du lịch lễ 30/4 - 1/5</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item menu-destination3">
+                            <div class="item-travel destination3">
+                                <i class="fas fa-suitcase-rolling icon-menu " title="Dịch vụ"></i>
+                                <a href="#"> Dịch vụ <i class="fas fa-caret-down"></i></a>
+                            </div>
+                            <div class="list-destination3">
+                                <div class="row ">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="destination-content">
+                                            <ul>
+                                                <li title="Khách sạn"><a href="#">Khách sạn</a></li>
+                                                <li title="Thuê xe"><a href="#">Thuê xe</a></li>
+                                                <li title="Vé máy bay"><a href="#">Vé máy bay</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-travel">
+                                <i class="fas fa-newspaper icon-menu" title="Tin tức"></i>
+                                <a href="blog.html"> Tin tức</a>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="item-travel">
+                                <i class="fas fa-umbrella-beach icon-menu" title="Giới thiệu"></i>
+                                <a href="#"> Giới thiệu</a>
+                            </div>
+
+                        </div>
+                        <!-- <div class="item">
+              <a href="#">
+                <i class="fas fa-shopping-basket icon-cart"></i>
+              </a>
+              <span class="notice-cart">2</span>
+            </div> -->
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- end header -->
+            <div class="detail-tour">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Tour trong nước</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Du Lịch Đà Lạt View - Thiền Viện Trúc
+                                Lâm - QUÊ Garden - Kim Ngân Hills Resort</li>
+                        </ol>
+                    </nav>
+                    <h2 class="name-tour">Du Lịch Đà Lạt View - Thiền Viện Trúc Lâm - QUÊ Garden - Kim Ngân Hills Resort</h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="rated-current">
+                                <p><b>4.88/5</b> trong <b>5</b> đánh giá</p>
+                            </div>
+                            <div class="slider-img">
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="product/a5.jpg" class="d-block rounded" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="product/a6.jpg" class="d-block rounded" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="product/a7.jpg" class="d-block rounded" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="service">
+                                <h5>Dịch vụ bao gồm: </h5>
+                                <div class="icon">
+                                    <div class="item">
+                                        <i class="fas fa-home"></i>
+                                        <p>Chổ ở</p>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-utensils"></i>
+                                        <p>Bửa ăn</p>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-tag"></i>
+                                        <p>Vé </p>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-car"></i>
+                                        <p>Xe đưa đón</p>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-umbrella"></i>
+                                        <p>Bảo hiểm</p>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="schedule">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#schedule" type="button" role="tab" aria-controls="schedule"
+                                            aria-selected="true">Lịch trình</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#price-list" type="button" role="tab"
+                                            aria-controls="price-list" aria-selected="false">Bảng giá vé</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#note" type="button" role="tab" aria-controls="note"
+                                            aria-selected="false">Ghi chú</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#comment" type="button" role="tab" aria-controls="comment"
+                                            aria-selected="false">Bình luận</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="schedule" role="tabpanel"
+                                        aria-labelledby="home-tab">
+
+                                        <textarea >
+                                            NGÀY 1 | TP.HCM – THIỀN VIỆN TRÚC LÂM - ĐÀ LẠT (ăn sáng, trưa, chiều)
+                                            Sáng:    Xe và Hướng Dẫn Viên Du Lịch Việt đón Quý khách tại điểm hẹn khởi hành đi Đà Lạt. 
+                                            Đoàn dùng bữa sáng tại Ngã Ba Dầu Dây. Đoàn tiếp tục khởi hành đến TP. Đà Lạt.
+                                            Trưa:    Dùng cơm trưa tại nhà hàng.
+                                            
+                                            Tham quan Thiền Viện Trúc Lâm, đi cáp treo qua đồi Rôbin (chi phí tự túc), ngắm cảnh rừng thông, hồ Tuyền Lâm, núi Phượng Hoàng từ trên cao.
+                                            Đoàn đến Đà Lạt, đến Quảng trường Lâm Viên với tuyệt tác kiến trúc bằng kính: Bông Hoa Dã Quỳ và Nụ Hoa Atiso. 
+                                             
+                                            Tối:    Dùng cơm tối, nhận phòng nghỉ ngơi
+                                            
+                                            Quý khách tự túc dạo thành phố Đà Lạt về đêm, ngắm cảnh Hồ Xuân Hương, thưởng thức hương vị cà phê phố núi hoặc tham quan Vườn Ánh Sáng Lumiere – một tổ hợp các phòng tham quan riêng biệt ứng dụng công nghệ trình chiếu ánh sáng để tạo ra nhiều “thế giới thu nhỏ" khác nhau, như một bảo tàng nghệ thuật ánh sáng mới tại Đà Lạt. 09 căn phòng với 09 chủ đề khác nhau, cùng nhiều không gian nghệ thuật khác, du khách tham quan sẽ mãn nhãn với bữa tiệc Ánh sáng có một không hai tại Đà Lạt (chi phí tham quan và phương tiện vận chuyển tự túc). 
+                                            Nghỉ đêm khách sạn tại Đà Lạt.
+                                            NGÀY 2 | QUÊ GARDEN – ĐÀ LẠT VIEW – KIM NGÂN HILLS ( Ăn sáng, trưa, chiều) (Xem thêm)
+                                            NGÀY 3 | ĐÀ LẠT – TP.HCM (ăn sáng, trưa) (Xem thêm)
+                                        </textarea>
+                                    </div>
+                                    <div class="tab-pane fade" id="price-list" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th></th>
+                                                <th scope="col">Độ tuổi</th>
+                                                <th scope="col">Giá tour</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                              <th rowspan="3">Bảng giá</th>
+                                                <td>Người lớn (> 10 tuổi)</td>
+                                                <td>1.579.000đ</td>
+                                              </tr>
+                                              <tr>
+                                            
+                                                <td>Trẻ em(5 - 10 tuổi)</td>
+                                                <td>789.500đ</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>Em bé(< 5 tuổi)</td>
+                                                <td>0đ</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="note" role="tabpanel" aria-labelledby="contact-tab">
+                                       <textarea >
+                                        GIÁ TOUR KHÔNG BAO GỒM: 
+                                             Đồ uống (rượu, bia, nước ngọt...) trong các bữa ăn và suốt chương trình.
+                                            Các chi phí cá nhân (điện thoại, giặt là, mua sắm, thăm quan ngoài chương trình..)
+                                            Thuế giá trị gia tăng 10% (VAT)
+                                            Chi phí thuê trang phục chụp ảnh tại các điểm
+                                            Tiền thưởng (Tip) cho lái xe, hướng dẫn viên.
+                                      
+                                       </textarea>
+                                    </div>
+                                    <div class="tab-pane fade" id="comment" role="tabpanel"
+                                        aria-labelledby="contact-tab">
+                                        <form>
+                                            <div class="mb-3 d-flex ">
+                                              <label for="exampleInputEmail1" class="form-label">Đánh giá:</label>
+                                              <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                              </div>
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="comment" class="form-label">Bình luận:</label>
+                                              <input type="text" name="comment"></input>
+                                            </div>
+                                           
+                                            <button type="submit" class="btn btn-primary">Bình luận</button>
+                                        </form>
+                                        <h4 >Bình luận từ khách hàng</h4>
+                                        <div class="comment-customer d-flex">
+                                            <img src="img/b10.jpg" width="50px" height="50px">
+                                            <div class="text">
+                                                <p class="item">
+                                                    <b>Nguyễn Thùy</b> 
+                                                    <span>21/2/2021</span></p>
+                                                <p class="item">Tour này đi rất là ok.</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-customer d-flex">
+                                            <img src="img/b10.jpg" width="50px" height="50px">
+                                            <div class="text">
+                                                <p class="item">
+                                                    <b>Nguyễn Thùy</b> 
+                                                    <span>21/2/2021</span></p>
+                                                <p class="item">Tour này đi rất là ok.</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+
+
+                            </div>
+                           
+                        </div>
+                        <!-- end column left -->
+                        <div class="col-12 col-lg-4">
+                            <div class="content-detail">
+                                <table class="table">
+                                    <tr>
+                                        <th colspan="2" class="name">
+                                            Du Lịch Đà Lạt View - Thiền Viện Trúc Lâm - QUÊ Garden - Kim Ngân Hills
+                                            Resort
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>Mã tour:</th>
+                                        <td>160475</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Thời gian:</th>
+                                        <td>3 ngày 2 đêm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nơi khởi hành:</th>
+                                        <td>Cần Thơ</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nơi đến:</th>
+                                        <td>Đà Lạt</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="name-price">Giá:</th>
+                                        <td class="price"> 2.300.000 VNĐ</td>
+                                    </tr>
+                                </table>
+
+                                <div class="book-tour">
+                                    <button type="button" class="btn book">
+                                        Đặt ngay
+                                    </button>
+                                    <button type="button" class="btn contact">
+                                        Liên hệ ngay
+                                    </button>
+                                </div>
+                                <div class="tag">
+
+                                    <span>Tags:
+                                        <a href="#">Bảo hiểm</a>
+                                        <a href="#">Vé tham quan</a>
+                                        <a href="#">Hướng dẫn viên</a>
+                                        <a href="#">Đà Lạt</a>
+
+                                        <a href="#">Món ăn</a>
+                                        <a href="#">Khách sạn</a>
+                                    </span>
+
+                                </div>
+
+
+                            </div>
+                              <h3 class="text-center">Cẩm nang du lịch</h3>
+                            <div class="blog">
+                            
+                                    <div class="row p-2">
+                                      <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                        <a href="#">
+                                          <img src="product/a6.jpg" width="100%" class="img-2">
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                        <a href="#">
+                                          <div class="title-item">Đảo Thiềng Liềng điểm du lịch mới lạ hấp dẫn</div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="row p-2">
+                                      <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                        <a href="#">
+                                          <img src="product/a4.jpg" width="100%" class="img-2">
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                        <a href="#">
+                                          <div class="title-item">Mê đắm vẻ đẹp quên lối về của làng nổi Tân Lập</div>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="row p-2">
+                                      <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                        <a href="#">
+                                          <img src="product/a7.jpg" width="100%" class="img-2">
+                                        </a>
+                                      </div>
+                                      <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                                        <a href="#">
+                                          <div class="title-item">Đất Việt Tour vinh dự cùng Sở Du Lịch TPHCM tổ chức tri ân chiến sĩ tuyến
+                                            đầu</div>
+                                        </a>
+                                      </div>
+                                    </div>
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end column right -->
+
+                    <div class="tour">
+                        <div class="container">
+                          <div class="title">
+                            <h2>Tour liên quan</h2>
+                          </div>
+                          <div class="owl-carousel owl-theme carousel-2">
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a9.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a8.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a7.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a6.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a4.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a7.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a9.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/a8.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Du lịch Đà Lạt - Quê Garden - Đà Lạt View Coffee - Kim Ngân Hills Resort
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                      </div>
+                      <div class="combo-tour">
+                        <div class="container">
+                          <div class="title">
+                            <h2>Tour đã xem</h2>
+                          </div>
+                
+                          <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                            <div class="col">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/c1.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">2,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Khách sạn Swiss Belresort + Vé máy bay
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card h-100">
+                                <a href="#">
+                                  <img src="product/c2.jpg" class="card-img-top" alt="...">
+                                  <a href="#">
+                                    <i class="far fa-heart"></i>
+                                  </a>
+                                  <span class="price">5,900,00 VNĐ</span>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Khách sạn Ladalat Hotel Đà Lạt + Vé máy bay
+                                    </h5>
+                                    <div class="card-text">
+                                      <p><i class="far fa-clock"></i> Lịch trình: 4 ngày 3 đêm</p>
+                                      <p><i class="far fa-calendar-check"></i> Khởi hành: 11/12/2021</p>
+                                      <p><i class="far fa-user"></i> Số chỗ còn nhận: 10</p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                
+                      </div>
+                </div>
+            </div>
+            <!-- end detail tour -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6 pt-sm-4">
+                            <h4>Liên hệ</h4>
+                            <div class="text">
+                                <p><i class="fas fa-map-marker-alt"></i> Số 12, Đường Nguyễn Văn Cừ, phường An Khánh,
+                                    quận Ninh Kiều, TP
+                                    Cần Thơ</p>
+                                <p><i class="fas fa-phone-volume"></i> 19006750</p>
+                                <p><i class="fas fa-envelope"></i> travel@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                            <div class="row pb-4">
+                                <h4>Kết nối với chúng tôi</h4>
+                                <div class="text icon">
+                                    <i class="fab fa-facebook-square" title="Facebook"></i>
+                                    <i class="fab fa-twitter-square" title="Twitter"></i>
+                                    <i class="fab fa-google-plus-square" title="Google"></i>
+                                    <i class="fab fa-instagram-square" title="Instagram"></i>
+                                    <i class="fab fa-youtube-square" title="Youtube"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4>Chấp nhận thanh toán</h4>
+                                <div class="text">
+                                    <img src="img/pay1.png" width="30%" height="60">
+                                    <img src="img/pay2.png" width="30%" height="60">
+                                    <img src="img/pay3.png" width="30%" height="50">
+                                    <img src="img/pay4.png" width="30%" height="60">
+                                    <img src="img/pay5.png" width="30%" height="50">
+                                    <img src="img/pay6.png" width="30%" height="50">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                            <h4>Thông tin</h4>
+                            <div class="text content">
+                                <a href="#">Tin tức</a>
+                                <a href="#">Tạp chí du lịch</a>
+                                <a href="#">Kinh nghiệm du lịch</a>
+                                <a href="#">Liên hệ</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                            <h4>Đăng ký nhận tin</h4>
+                            <div class="text">
+                                <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Email"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-primary" type="submit">Gửi</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <p>Bản quyền thuộc về Travel &copy; 2022</p>
+                </div>
+            </footer>
+            <!-- end footer -->
+            <div class="scroll" onclick="topFunction()" id="scroll">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <!-- end scroll -->
+        </div>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script>
+
+        $(function () {
+            $('#summernote').summernote({
+                height: 300,
+
+            });
+
+
+
+        })
+    </script> -->
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

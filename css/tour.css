@@ -1,0 +1,136 @@
+.list-tour .breadcrumb{
+    padding: 10px;
+}
+.list-tour .list{
+    padding-bottom: 20px;
+}
+.list-tour .list .title{
+    text-transform: uppercase;
+    font-size: 18px;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    font-weight: bold;
+}
+.list-tour .list li{
+    list-style: none;
+    padding-left: 16px;
+}
+.list-tour .list li a{
+   text-decoration: none;
+   color: black;
+}
+.list-tour .list-group.list-group-flush {
+    padding-left: 18px;
+   
+}
+.list-tour .list-group.list-group-flush i{
+    float: right;
+    color: #a5a3a3;
+    vertical-align: middle;
+    font-size: 12px;
+   
+    padding: 6px 0px;
+}
+.list-tour .list-group.list-group-flush input{
+  
+    cursor: pointer;
+}
+.list-tour h5{
+    text-transform: uppercase;
+    color: rgb(14, 14, 124);
+     font-family: 'Lexend Deca', sans-serif;
+}
+.list-tour .show-all{
+    display: inline-flex;
+    font-size: 17px;
+}
+.list-tour .show-all .show{
+    cursor: pointer;
+    background-color: #80808059;
+    /* background-color: #ac9a5c9c; */
+    padding: 10px 14px;
+    margin: 5px;
+    color: white;
+}
+.list-tour .show-all .show:hover{
+    background-color: #f3c31b9c;
+    color: white;
+}
+.list-tour .show-all #show1{
+    background-color: #f3c31b9c;
+}
+.list-tour select{
+    width: 100%;
+    padding: 6px;
+}
+.list-tour .tour{
+    padding-bottom: 30px;
+}
+.list-tour .pagination{
+    padding-bottom: 50px;
+}
+#show-gird{
+   display: inline-flex;
+}
+#show-list{
+display: none;
+}
+
+#show-list .fa-heart{
+    position: absolute;
+     color: white; 
+    font-size: 25px;
+    left: 8px;
+    top: 9px;
+}
+
+p .fa-filter{
+    display: none;
+     font-size: 25px;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    background-color: rgb(14, 14, 124);
+    color: white;
+    padding: 8px;
+}
+
+ .offcanvas{
+        position: none;
+        bottom: 0;
+        z-index: 1045;
+        /* display: flex; */
+        flex-direction: column;
+        max-width: 100%;
+        visibility:visible;
+        background-color: #fff;
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+        display: contents;
+    }
+    /* .offcanvas-start{
+        transform: translateX(100%);
+    } */
+.small{
+    font-size: inherit;
+}
+@media(max-width:768px){
+    p .fa-filter{
+        display: block;
+       
+    }
+    .offcanvas {
+        position: fixed;
+        bottom: 0;
+        z-index: 1045;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        visibility: hidden;
+        background-color: #fff;
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+       
+    }
+}
